@@ -2,7 +2,7 @@ import os, re
 from time import sleep
 
 sleepy_time = 10
-pipe_location = "/home/user/Documents/a_pipe"
+pipe_location = os.getenv("SIG_PIPE")
 
 def main():
 	# if the pipe is already created, you will throw an error
